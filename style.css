@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 600;
+    color: rgb(90, 42, 42);
+}
+
+body{
+   background-image: url(assets/pexels-diva-plavalaguna-6146704.jpg); 
+}
+
+.nav-link{
+    color:rgb(69, 33, 33)
+}
+
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 150px;
+    font-weight: 600;
+    color: rgb(90, 42, 42);
+  }
+
+  #box{
+    text-align: center;
+    background-color: rgb(2, 101, 2);
+    color: aliceblue;
+  
+  }
+
+.formborder{
+  border: 15px solid rgb(2, 101, 2);
+  padding: 5px;
+  border-radius: 20px;
+}
+input{
+  width: auto;
+  margin: auto;
+}
+
+.nav-link.active {
+  background-color: green !important;
+  color: white !important;
+}
+
+#status{
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width:22%;
+  height: 20%;
+  top:0%;
+  right:0%;
+  z-index:10;
+  background-color:#CCC;
+  border: 1px solid grey;
+}
+
+#statusText{
+  height: 50px;
+  width: 100%;
+  font-size: 14pt;
+}
+.feed-item{
+  width: auto;
+  border: 15px solid rgb(255, 255, 255);
+  padding: 50px;
+  margin: 20px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 750;
+  text-align: center;
+}
+.friends-status{
+  width: 50%;
+  border: 15px solid rgb(18, 78, 3);
+  padding: 50px;
+  margin: 20px;
+  color: #1f7e02;
+  font-size: 18px;
+  font-weight: 750;
+  text-align: center;
+}
+.friend-info{
+  float: inline-start;
+	align-items: center;
+	padding: 3rem;
+	width: 25%;
+  height: 100%;
+	max-width: 300px;
+	background-color: #1b2028;
+	border-radius: 16px;
+	border: 3px solid transparent;
+	background-clip: padding-box;
+	text-align: center;
+	color: #f1f3f3;
+} 
+
+.bubble {
+  
+  --r: 25px; /* the radius */
+  --t: 30px; /* the size of the tail */
+  text-align: center;
+  padding: calc(2*var(--r)/3);
+  -webkit-mask: 
+    radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+      var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+    conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+      calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+    radial-gradient(50% 50%,#000 98%,#0000 101%) 
+      0 0/var(--r) var(--r) space padding-box;
+  background: linear-gradient(135deg,#FE6D00,#018f37) border-box;
+  color: #fff;
+}
+.left {
+  --_d: 0%;
+  border-left: var(--t) solid #0000;
+  margin-right: var(--t);
+  place-self: start;
+}
+.right {
+  --_d: 100%;
+  border-right: var(--t) solid #0000;
+  margin-left: var(--t);
+  place-self: end;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  place-content: center;
+  gap: 20px;
+  font-family: system-ui, sans-serif;
+  font-size: 20px;
+}
+
+.follow-button {
+	border: 0;
+	background-color: rgb(198, 98, 4);
+	padding: 10px;
+	height: 46px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	line-height: 1;
+	transition: 0.15s ease;
+  border-radius: 16px;
+}  

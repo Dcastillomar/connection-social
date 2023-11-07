@@ -1,0 +1,50 @@
+<hr>
+<link rel="stylesheet" href="style.css">
+
+<h1>Connect</h1>
+
+<ul class="nav nav-pills nav-fill">
+  <li class="nav-item">
+    <a class="nav-link" id="home-link" href="index.php">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="discover-link" href="discover.php">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="friends-link" href="friends.php">Friends</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="signup-link" href="signup.php">Sign Up</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="login-link" href="login.php">Login</a>
+  </li>
+
+</ul>
+</nav>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the current page URL
+    var currentURL = window.location.href;
+
+    // Remove the "active" class from all navigation links
+    var navLinks = document.querySelectorAll(".nav-link");
+    navLinks.forEach(function (link) {
+      link.classList.remove("active");
+    });
+
+    // Determine which link corresponds to the current page and add the "active" class
+    if (currentURL.indexOf("index.php") !== -1) {
+      document.getElementById("home-link").classList.add("active");
+    } else if (currentURL.indexOf("discover.php") !== -1) {
+      document.getElementById("discover-link").classList.add("active");
+    } else if (currentURL.indexOf("signup.php") !== -1) {
+      document.getElementById("signup-link").classList.add("active");
+    } else if (currentURL.indexOf("login.php") !== -1) {
+      document.getElementById("login-link").classList.add("active");
+    } else if (currentURL.indexOf("friends.php") !== -1) {
+      document.getElementById("friends-link").classList.add("active");
+    }
+  });
+</script>
