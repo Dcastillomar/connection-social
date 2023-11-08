@@ -95,7 +95,7 @@ input{
   font-weight: 750;
   text-align: center;
 }
-.friend-info{
+/* .friend-info{
   float: inline-start;
 	align-items: center;
 	padding: 3rem;
@@ -108,8 +108,28 @@ input{
 	background-clip: padding-box;
 	text-align: center;
 	color: #f1f3f3;
-} 
+}  */
+.friend-info {
+  float: none; /* Clear the float */
+  align-items: center;
+  padding: 1rem; /* Reduce padding */
+  width: 100%; /* Occupy the full width of the container */
+  max-width: 100%; /* Ensure it doesn't exceed the screen width */
+  background-color: #1b2028;
+  border-radius: 16px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  text-align: center;
+  color: #f1f3f3;
+}
 
+/* Media query for screens with a max-width of 768px (typical for mobile) */
+@media (max-width: 768px) {
+  .friend-info {
+    padding: 1rem; /* Further reduce padding */
+    font-size: 14px; /* Adjust text size */
+  }
+}
 .bubble {
   
   --r: 25px; /* the radius */
