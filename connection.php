@@ -6,8 +6,7 @@ $dbname = "kcy1de553ln3xoyt";
 
 $conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname) or die("database connection error");
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-echo "Connection was successfully established!";
+// // Check connection
+// if (!$con = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname)) {
+//     die("failed to connect");
+// }
